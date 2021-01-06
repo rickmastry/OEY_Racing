@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
 
-
-
 :root {
     --mainWhite: #fff;
     --secondaryWhite: rgb(230, 228, 228);
@@ -493,6 +491,9 @@ a.icons:hover{
   .navbar-brand-img{
     display: block;
     width: 425px;
+  }
+  .navbar {
+    height: 90px;
   }
 
 }
