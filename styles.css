@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+
+
+
+:root {
+    --mainWhite: #fff;
+    --secondaryWhite: rgb(230, 228, 228);
+    --mainBlack: #010101;
+    --mainGrey: #79797B;
+    --mainSpacing: 0.5rem;
+    --secondarySpacing: 0.25rem;
+    --mainTransition: all 0.55s ease-in-out;;
+    --mainBlue: #097AC5;
+    --secondaryBlue: #0053B6;
+}
+
+html {
+    box-sizing: border-box;
+    background: var(--mainBlack);
+    scroll-behavior: smooth;
+
+}
+
+body {
+    min-height: calc(100vh - 120px);
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #667;
+    line-height: 1.375;
+} 
+
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: var(--mainBlack);
+    border-bottom:  2px solid var(--mainBlue);
+    z-index:2;
+}
+
+.navbar-center {
+    width: 100%;
+    height: 80px;;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+} 
+
+.navbar-brand-img{
+    width: 600px;
+}
+
+
+
+.navbar-nav{
+  display:flex;
+  list-style:none;
+  
+}
+
+.nav-icons {
+  font-size: 1.5rem;
+}
+
+.nav-icon {
+  display:none;
+}
+
+.fas.fa-bars {
+  display:none;
+}
+
+.navigation{
+  font-family:'Unica One', cursive;  
+  margin-left:0;
+  text-decoration:none;
+  color: var(--mainWhite);
+  font-size: 1rem;
+  padding: .5rem .5rem;
+  cursor: pointer;
+  transition: var(--mainTransition);
+ 
+}
+
+.navactive{
+  border-bottom: var(--secondaryBlue)1px solid;
+}
+
+.navigation:hover {
+  color: var(--mainGrey);
+ 
+  
+}
+
+.side-nav{
+  height:100%;
+  width: 0;
+  position: fixed;
+  top:0;
+  left:0;
+  opacity:0.9;
+  background-color: #111;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.side-nav a{
+  font-family:'Unica One', cursive;
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover{
+  cursor:pointer;
+  color: var(--mainWhite);
+}
+
+.side-nav .btn-close{
+  position: absolute;
+  top:0;
+  right: 22px;
+  font-size:36px;
+  margin-left:50px;
+  background-color: #222;
+  color: white;
+  opacity:0.9;
+  border: 1px solid #222;
+}
+
+h1{
+    font-family:'Unica One', cursive;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 1.875em;
+}
+
+.logo-small{
+    height:25%;
+    width:25%;
+}
+
+.hero {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    min-height: calc(100vh - 10px);
+    /*background: url("../img/oey-big.jpg") center/cover no-repeat;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+.hero-banner {
+    min-height: calc(100vh - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid black;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.bio{
+  height: 700px;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--secondaryWhite);
+}
+
+.about-banner {
+    margin-top:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+  
+.banner-title{
+    font-family: 'Unica One', cursive;
+    margin-bottom: 1rem;
+    color: var(--mainGrey);
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.bio-about{
+    font-family: 'Unica One', cursive;
+    color: var(--mainGrey);
+    text-align:left;
+    font-size: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top:2rem;
+}
+
+.form-inline.my-2.my-md-0{
+    padding-bottom:1rem;
+}
+
+.form-control{
+  font-family: 'Unica One', cursive;
+  width: 70%;
+  height: 30px;
+  margin: .5rem;
+  border:  var(--mainBlue) 3px solid;
+  border-radius: 5px;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--mainWhite);
+  border: var(--mainBlue) 3px solid;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: .5rem;
+  background-color: var(--mainGrey); 
+  transition: all 0.6s ease-in-out;
+
+}
+
+.button:hover {
+  color: #0c65a0;
+  font-weight: bold;
+  padding: 15px 25px;
+  background-color: rgba(255, 255, 255, 0.596);
+  transition: all 0.6s ease-in-out; 
+}
+
+#emailHelp{
+  margin: .5rem;
+}
+
+.contact-container{
+  background-color: var(--secondaryWhite);
+  border: var(--mainGrey) 3px solid; 
+  width:50%;
+  height: 650px;
+  margin-top:4rem;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 10px;
+}
+
+.news-headline{
+  margin-left:0.5rem;
+}
+
+label {
+  display: inline-block;
+  margin: .5rem;
+}
+
+.description {
+  font-family: 'Unica One', cursive;
+  border: var(--mainBlue) 3px solid;
+  border-radius: 5px;
+  width: 70%;
+  height: 100px;
+  margin: .5rem;
+}
+
+.gallery-section{
+  background-color: var(--secondaryWhite);
+}
+
+.gallery{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  margin: 50px 50px;
+}
+
+.gallery img{
+  transition: 1s;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  
+}
+
+.gallery img:hover{
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}  
+
+h1.gallery-headline{
+margin-top:50px;
+margin-bottom: 50px;
+text-align: center;
+padding-top: 75px;
+}
+
+footer{
+    margin:0;
+    background-color: var(--mainBlack);
+    color:var(--mainWhite);
+    height: 300px;
+}
+
+.copyright{
+ color: var(--mainWhite);
+ text-align:center;
+}
+
+.social-icons{
+   margin-top:100px;
+   padding:0;
+   text-align:center;
+}
+
+li.color{
+    margin-top:100px;
+    display: inline-block;
+    padding: 20px;
+    font-size: 1.5rem;
+   
+}
+
+a.icons{
+    color:white;
+    transition: all 0.5s ease-in-out;
+}
+
+a.icons:hover{
+    color: var(--mainBlue);
+}
+
+@media only screen and (max-width: 846px) and (orientation : landscape){
+ 
+  .contact-container{
+    width:80%;
+  }
+
+  .bio-about{
+    font-size: 1.5rem;
+  }
+
+  h1{
+    font-size: 1.8em;
+  }
+
+  .gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-icon {
+    display:block;
+    font-size: 1.5rem;
+    cursor:pointer;
+  }
+
+  .fas.fa-bars {
+    margin-left: 700px;
+    color: white;
+    display:block;
+    cursor: pointer;
+  }
+
+  .navigation{
+    display: none;
+  }
+
+  .navbar-brand-img{
+    display:none;
+  }
+
+  .navbar-nav {
+   display:none;
+  }
+
+  body {
+   font-size: 20px;
+  } 
+
+
+}
+
+
+
+@media only screen and (max-width: 768px) and (orientation : portrait) {
+
+  .social-icons{
+    margin-top:20px;
+ }
+ 
+ li.color{
+     margin-top:20px;
+     font-size: 1rem;
+    
+ }
+
+  .button {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: .5rem;
+    background-color: var(--mainGrey); 
+    transition: all 0.6s ease-in-out;
+  
+  }
+  .navbar-brand-img{
+    width: 325px;
+  }
+  .contact-container{
+    width:90%;
+  }
+  .bio-about{
+    font-size: 1rem;
+  }
+
+  h1{
+    font-size: 1.8em;
+  }
+
+  .hero {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    min-height: calc(60vh - 10px);
+  }
+
+  .gallery{
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+  }
+
+  .nav-icon {
+    display:block;
+    font-size: 1.5rem;
+    cursor:pointer;
+  }
+ .fas.fa-bars {
+    margin-left: 0px;
+    color: white;
+    display:block;
+    cursor: pointer;
+   }
+
+  .navigation{
+    display: none;
+  }
+
+  .navbar-nav {
+   display:none;
+  }
+ 
+}
+
+@media only screen and (max-width: 748px) and (orientation : landscape) {
+  .nav-icon {
+    display:block;
+    font-size: 1.5rem;
+    cursor:pointer;
+  }
+ .fas.fa-bars {
+    margin-left: 200px;
+    color: white;
+    display:block;
+    cursor: pointer;
+   }
+
+  .navigation{
+    display: none;
+  }
+
+  .navbar-nav {
+   display:none;
+  }
+
+  .navbar-brand-img{
+    display: block;
+    width: 425px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
