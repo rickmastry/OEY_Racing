@@ -290,6 +290,22 @@ label {
   margin: 50px 50px;
 }
 
+.blog-wrapper{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  margin: 50px 50px;
+}
+
+.blog-post img{
+  transition: 1s;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
 .gallery img{
   transition: 1s;
   width: 300px;
