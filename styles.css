@@ -143,6 +143,13 @@ h1{
     font-weight: 400;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    font-size: 2.875em;
+}
+h2{
+    font-family:'Unica One', cursive;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     font-size: 1.875em;
 }
 
@@ -183,7 +190,8 @@ img {
 }
 
 .about-banner {
-    margin-top:60px;
+    text-align:center;
+    margin-top:20px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -191,10 +199,12 @@ img {
 }
   
 .banner-title{
+    margin-top:50px;
+    padding-top:50px;
     font-family: 'Unica One', cursive;
     margin-bottom: 1rem;
     color: var(--mainGrey);
-    font-size: 55px;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -320,10 +330,9 @@ label {
 }  
 
 h1.gallery-headline{
-margin-top:50px;
 margin-bottom: 50px;
 text-align: center;
-padding-top: 75px;
+padding-top: 50px;
 }
 
 footer{
